@@ -1,7 +1,6 @@
 # 問題作成クイック・スタート・ガイド2：問題変数
 
-[1 - 基本的な問題](Authoring_quick_start_1.md) | 2 - 問題変数 | [3 - フィードバックを改善する](Authoring_quick_start_3.md) | [4 - ランダム化](Authoring_quick_start_4.md) | [5 - 問題のテスト](Authoring_quick_start_5.md) | [6 - 複数解答問題](Authoring_quick_start_6.md) | [7 - 数式簡略の無効化](Authoring_quick_start_7.md) | [8 - 問題のインポートと小テスト](Authoring_quick_start_8.md)
-
+[1 - 動作する最小限の問題](Authoring_quick_start_1.md) | 2 - 問題変数 | [3 - フィードバックを改善する](Authoring_quick_start_3.md) | [4 - ランダム化](Authoring_quick_start_4.md) | [5 - 問題のテスト](Authoring_quick_start_5.md) | [6 - STACK question libraryについて](Authoring_quick_start_6.md) | [7 - 複数回答欄問題](Authoring_quick_start_7.md) | [8 - 数式簡略の無効化](Authoring_quick_start_8.md) | [9 - 問題のインポートと小テスト](Authoring_quick_start_9.md)
 
 問題作成クイック・スタート・ガイドのこの部分では問題変数の使用について扱います。次のビデオでそのプロセスを説明していますので,ご覧ください。：
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SFo3MBkyWVQ" frameborder="0" allowfullscreen></iframe>
