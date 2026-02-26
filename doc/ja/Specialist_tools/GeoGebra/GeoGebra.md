@@ -98,7 +98,7 @@ STACK上で新しい問題を作成する。問題変数を設定する。初期
 
 1. `remember` 解答欄は文字列型でなければならない。
 2. 「正解」には空文字列 `""` を使用する。
-3. （クイズ中に利用可能な場合）教師の最終解答の一部として「remember」の正解を表示したくないため、解答欄のSTACK「その他のオプション」に `hideanswer` を設定して学生から[解答欄を非表示](../../Authoring/Inputs/Input_options.md#extra_option_hideanswer)にする。
+3. （クイズ中に利用可能な場合）教師の最終解答の一部として「remember」の正解を表示したくないため、解答欄のSTACK「その他のオプション」に `hideanswer` を設定して学生から[解答欄を非表示](../../../en/Authoring/Inputs/Input_options.md#extra_option_hideanswer)にする。
 4. *remember* 内の値はPRTでは利用できず、STACKのフィードバックで値の計算に使用することはできない。
 
 ## 5. 問題の仕上げと調整

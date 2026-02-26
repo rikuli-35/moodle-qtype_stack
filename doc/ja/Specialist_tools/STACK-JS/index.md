@@ -1,10 +1,10 @@
 # STACK-JS
 
-このページでは、STACK-JSシステムについて解説する。STACK-JSは、問題の入力内容と出力されるコンテンツを、カスタムのブラウザ側JavaScriptロジックに接続するために使用される。通常、このロジックは `[[jsxgraph]]` ブロックや `[[javascript]]` ブロック内に記述される。動的な振る舞いを追加したいにも関わらず、既製の[CASTextブロック](../../Authoring/Question_blocks/Dynamic_blocks.md)では対応できない場合、JavaScriptを使用することで実現できる可能性がある。
+このページでは、STACK-JSシステムについて解説する。STACK-JSは、問題の入力内容と出力されるコンテンツを、カスタムのブラウザ側JavaScriptロジックに接続するために使用される。通常、このロジックは `[[jsxgraph]]` ブロックや `[[javascript]]` ブロック内に記述される。動的な振る舞いを追加したいにも関わらず、既製の[CASTextブロック](../../../en/Authoring/Question_blocks/Dynamic_blocks.md)では対応できない場合、JavaScriptを使用することで実現できる可能性がある。
 
 ただし、生のJavaScriptを直接使用すると、現在利用中のVLE（例：Moodle）のバージョン固有の動作に依存することになり、VLEの次回のアップデートやセキュリティ強化の際にスクリプトが動作しなくなるおそれがある。現在、STACKでは生のJavaScript（すなわち `<script>` タグの使用）と、STACK-JSが管理する制限付きサンドボックス内でのJavaScript実行の両方をサポートしている。後者は、限定的なインターフェースを提供しており、論理的に制限されたアクションを現在使用中のVLEの対応する機能にマッピングすることを目的としている。後者の利用を強く推奨しており、将来的に前者の使用を制限する可能性がある。
 
-生のJavaScriptの使用を推奨しない技術的な理由については、安全なコンテキスト外で未知のJavaScriptを実行することに関連する[セキュリティ上の問題に関する簡潔な説明](../../Developer/STACK-JS.md#the-general-security-reason)を参照できる。
+生のJavaScriptの使用を推奨しない技術的な理由については、安全なコンテキスト外で未知のJavaScriptを実行することに関連する[セキュリティ上の問題に関する簡潔な説明](../../../en/Developer/STACK-JS.md#the-general-security-reason)を参照できる。
 
 ## 基本的なインターフェース機能
 

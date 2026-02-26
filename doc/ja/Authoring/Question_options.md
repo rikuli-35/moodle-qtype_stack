@@ -4,11 +4,11 @@
 
 ### 簡略化（問題全体）
 
-[簡略化](../CAS/Simplification.md)のエントリを参照できる。デフォルトは`true`である。
+[簡略化](../../en/CAS/Simplification.md)のエントリを参照できる。デフォルトは`true`である。
 
 ### 正と仮定 {#Assume_Positive}
 
-このオプションは、[Maxima](../CAS/Maxima_background.md)の
+このオプションは、[Maxima](../../en/CAS/Maxima_background.md)の
 
     assume_pos
 
@@ -35,7 +35,7 @@ Moodleは得点を小数点以下7桁まで保存するため、\(1/3\)は\(0.33
 * `.`：イギリス式の小数点。
 * `,`：コンマ。ヨーロッパの多くの国で使用されている。
 
-このオプションの設計については、[開発者ドキュメント](../Developer/Syntax_numbers.md)を参照できる。
+このオプションの設計については、[開発者ドキュメント](../../en/Developer/Syntax_numbers.md)を参照できる。
 
 教師は、テストケースの作成も含め、常に`.`を使用する厳密なMaxima構文を用いなければならない。
 
@@ -80,7 +80,7 @@ Moodleは得点を小数点以下7桁まで保存するため、\(1/3\)は\(0.33
 
 ### 平方根の記号 {#surd}
 
-このオプションは、[Maxima](../CAS/Maxima_background.md)の
+このオプションは、[Maxima](../../en/CAS/Maxima_background.md)の
 
     sqrtdispflag
 
@@ -146,11 +146,11 @@ Maximaでは`%i`は`%i^2=-1`を満たす複素単位である。しかし、学�
     q:a*i+b*j+c*k;
 
 すると、`p`と`q`の式はそれぞれ\[{3\cdot \vec{i}+4\cdot \vec{j}+5\cdot \vec{k}}\]と\[{a\cdot \vec{i}+b\cdot \vec{j}+c\cdot \vec{k}}\]と表示される。
-その他の例は[ベクトル](../CAS/Matrix.md#vectors)のドキュメントに記載されている。
+その他の例は[ベクトル](../../en/CAS/Matrix.md#vectors)のドキュメントに記載されている。
 
 ### 行列の括弧
 
-[行列](../CAS/Matrix.md#matrixparens)のエントリを参照のこと。
+[行列](../../en/CAS/Matrix.md#matrixparens)のエントリを参照のこと。
 
 ### インライン分数と表示分数
 

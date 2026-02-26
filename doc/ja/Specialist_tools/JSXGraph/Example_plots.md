@@ -2,7 +2,7 @@
 
 ## 離散数学とグラフ理論
 
-JSXGraphで離散数学の文脈でのグラフを表示することができる。例については[離散数学](../../Topics/Discrete_mathematics.md)を参照してほしい。
+JSXGraphで離散数学の文脈でのグラフを表示することができる。例については[離散数学](../../../en/Topics/Discrete_mathematics.md)を参照してほしい。
 
 問題変数において、頂点と辺を定義する。
 

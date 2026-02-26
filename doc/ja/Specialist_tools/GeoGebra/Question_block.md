@@ -10,7 +10,7 @@ STACKのCASTextフィールド（例：問題テキスト）にGeoGebraアプレ
 
 元のURLが [https://www.geogebra.org/m/seehz3km](https://www.geogebra.org/m/seehz3km) の場合、`material_id` は `seehz3km` である。
 
-`[[geogebra]]` [問題ブロック](../../Authoring/Question_blocks/index.md)の例を以下に示す。
+`[[geogebra]]` [問題ブロック](../../../en/Authoring/Question_blocks/index.md)の例を以下に示す。
 
     <p>You can show an applet:</p>
     [[geogebra]]
@@ -97,7 +97,7 @@ STACKのCASTextフィールド（例：問題テキスト）にGeoGebraアプレ
 
 これで「set」を使用した最小限の動作するGeoGebra問題ができるはずである。
 
-STACK関数 `ntupleify` を使用することで、学生の解答と教師の解答の両方がリストから `ntuple` に変換される。STACKでは `ntuple` をデータ型として定義しており、これにより\\( (1,2) \\) のような「n組」を、「リスト」 \\( [1,2] \\) とは異なるデータ型として扱うことができる。STACK/GeoGebraの設計では内部的にはリストが優先されている。ただし、上記のようにPRTを完成させることで、学生が従来の数学で一般的な丸括弧を使用した記法で座標を入力できるようになる。丸括弧はSTACKではデータ型 `ntuple` として解釈される。[集合、リスト、シーケンス、n組](../../CAS/Maxima_background.md#sets-lists-sequences-n-tuples)のドキュメントを参照できる。
+STACK関数 `ntupleify` を使用することで、学生の解答と教師の解答の両方がリストから `ntuple` に変換される。STACKでは `ntuple` をデータ型として定義しており、これにより\\( (1,2) \\) のような「n組」を、「リスト」 \\( [1,2] \\) とは異なるデータ型として扱うことができる。STACK/GeoGebraの設計では内部的にはリストが優先されている。ただし、上記のようにPRTを完成させることで、学生が従来の数学で一般的な丸括弧を使用した記法で座標を入力できるようになる。丸括弧はSTACKではデータ型 `ntuple` として解釈される。[集合、リスト、シーケンス、n組](../../../en/CAS/Maxima_background.md#sets-lists-sequences-n-tuples)のドキュメントを参照できる。
 
 `A` をランダムに生成されるオブジェクトにすることで、この問題を容易に拡張できる。
 
@@ -142,7 +142,7 @@ STACK関数 `ntupleify` を使用することで、学生の解答と教師の�
 この基本問題の拡張：
 
 1. 必要に応じて `ta1` をランダムに生成されるオブジェクトにすることで、問題を容易に拡張できる。
-2. この評価関数では、指定された座標に点 `A` を**正確に**配置することが求められる。このGeoGebraシートでは「グリッドに合わせる」機能が有効になっているため、点 `A` の正確な配置を求めることは妥当である。おおよその配置 \\( ||A-ta1||<0.1 \\) を許容する代替方法として、Num-GT 評価関数を使用できる：`ATGT(0.1, Distance(A,ta1))`。STACKはここで使用されている `Distance` を含む多数の[幾何関連のMaxima関数](../../CAS/Geometry.md)を提供している。
+2. この評価関数では、指定された座標に点 `A` を**正確に**配置することが求められる。このGeoGebraシートでは「グリッドに合わせる」機能が有効になっているため、点 `A` の正確な配置を求めることは妥当である。おおよその配置 \\( ||A-ta1||<0.1 \\) を許容する代替方法として、Num-GT 評価関数を使用できる：`ATGT(0.1, Distance(A,ta1))`。STACKはここで使用されている `Distance` を含む多数の[幾何関連のMaxima関数](../../../en/CAS/Geometry.md)を提供している。
 
 ## 「remember」サブタグの使用
 
@@ -168,7 +168,7 @@ STACK関数 `ntupleify` を使用することで、学生の解答と教師の�
 1. `remember` 解答欄は文字列型でなければならず、STACKのフィードバックで値の計算に使用することはできない。
 2. 「正解」には空文字列 `""` を使用する。
 3. 「remember」という名前は（このバージョンでは）ハードコードされている。
-4. （クイズ中に利用可能な場合）教師の最終解答の一部として「remember」の正解を表示したくないため、「remember」解答欄のSTACK「その他のオプション」に `hideanswer` を設定して学生から[解答欄を非表示](../../Authoring/Inputs/Input_options.md#extra_option_hideanswer)にする。
+4. （クイズ中に利用可能な場合）教師の最終解答の一部として「remember」の正解を表示したくないため、「remember」解答欄のSTACK「その他のオプション」に `hideanswer` を設定して学生から[解答欄を非表示](../../../en/Authoring/Inputs/Input_options.md#extra_option_hideanswer)にする。
 5. 動作確認後、CSSで「remember」解答欄を非表示にする。例：`<p style="display:none">[[input:remember]][[validation:remember]]</p>`（ただし、問題を開発中は非表示にしない。）
 
 ### 間接的なGGBオブジェクト（例：角度 k）を取得する最小限の例

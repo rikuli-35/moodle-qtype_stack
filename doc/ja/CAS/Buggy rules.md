@@ -33,4 +33,4 @@ $$
 
 ## 関連項目
 
-[Maximaリファレンストピック](index.md#reference)
+[Maximaリファレンストピック](../../en/CAS/index.md#reference)

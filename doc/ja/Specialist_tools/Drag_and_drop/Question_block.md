@@ -100,7 +100,7 @@ Sortable.jsの全オプション一覧は[SortableJS GitHub](https://github.com/
 
 学生がランダム化されたどの問題バリアントを閲覧したかを追跡し、後から確実に同じバリアントを再表示できるようにするためにはすべてのランダム化処理をMaximaレベルで実行する必要がある。
 
-ランダムな順序を作成するには、`proof_steps` リストを使用してMaximaオブジェクトとしてステップを定義し（[テキストベースの証明を表現するCASライブラリ](../../Topics/Proof/Proof_CAS_library.md)のドキュメントを参照）、以下のように `proof_steps` をランダムに並べ替える。
+ランダムな順序を作成するには、`proof_steps` リストを使用してMaximaオブジェクトとしてステップを定義し（[テキストベースの証明を表現するCASライブラリ](../../../en/Topics/Proof/Proof_CAS_library.md)のドキュメントを参照）、以下のように `proof_steps` をランダムに並べ替える。
 
 1. 通常通り変数 `proof_steps` を定義する。
 2. 問題変数に `proof_steps:random_permutation(proof_steps);` を追加する。
@@ -111,7 +111,7 @@ Sortable.jsの全オプション一覧は[SortableJS GitHub](https://github.com/
 Parsonsブロックとのすべてのデータのやり取りには、JSON形式が使用される。しかし、STACKの内部ではMaximaオブジェクトが使用されている。そのため、Maximaの構文とJSON形式の間でデータ変換を行う必要がある。
 
 1. Maxima関数 `parsons_encode(proof_steps)` は、`proof_steps` のリストをハッシュ化されたキーを持つJSON文字列に変換する。
-2. Maxima関数 `parsons_decode(ans1)` は、JSON文字列を[証明構成関数](../../Topics/Proof/Proof_CAS_library.md)に変換する。
+2. Maxima関数 `parsons_decode(ans1)` は、JSON文字列を[証明構成関数](../../../en/Topics/Proof/Proof_CAS_library.md)に変換する。
 
 ### ブロックパラメータ：`height` と `width`
 
@@ -125,7 +125,7 @@ Parsonsブロックとのすべてのデータのやり取りには、JSON形式
 
 パーソンズブロック内でドラッグする文字列にHTMLを埋め込むことができるため、通常通りHTMLの `<img>` タグを使用して画像を含めることができる。
 
-STACKで生成された[プロット](../../CAS/Maxima_plot.md)も `{@plot(x^2,[x,-1,1])@}` を使用するだけで含めることができる。これが可能である理由は、内部の評価順序にある。画像の完全なURLは、値がJavaScriptコードに代入された後に発生する一連の処理過程において初めて生成されるためである。
+STACKで生成された[プロット](../../../en/CAS/Maxima_plot.md)も `{@plot(x^2,[x,-1,1])@}` を使用するだけで含めることができる。これが可能である理由は、内部の評価順序にある。画像の完全なURLは、値がJavaScriptコードに代入された後に発生する一連の処理過程において初めて生成されるためである。
 
     proof_steps: [
     ["A", "The inverse function of \\(f(x)=x^2\\) has graph"],

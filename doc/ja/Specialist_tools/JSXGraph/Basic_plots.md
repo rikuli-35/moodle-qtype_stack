@@ -7,7 +7,7 @@
     a:rand(6)-3;
     fx:sin(x)+a;
 
-次に、以下の問題テキストを記述する。ここにはシンプルな`[[jsxgraph]]`[ブロック](../../Authoring/Question_blocks/Dynamic_blocks.md)が含まれている。`<script>`タグがない点に特に注意する。
+次に、以下の問題テキストを記述する。ここにはシンプルな`[[jsxgraph]]`[ブロック](../../../en/Authoring/Question_blocks/Dynamic_blocks.md)が含まれている。`<script>`タグがない点に特に注意する。
 
     <p>Type in an algebraic expression which has the graph shown below.</p>
     [[jsxgraph]]

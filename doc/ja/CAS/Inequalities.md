@@ -9,7 +9,7 @@ Maximaでは、$x-1>y$のような単一の不等式だけでなく、$x>1 \text
 2つの不等式が同じかどうかは、代数的等価性テストを使って判定できる。 
 
 連鎖した不等式（$1\leq x \leq 2$など）は使用できない。この場合は、$x \geq 1 \text{ and } x\leq 2$のように論理結合子を使う必要がある。
-また、学生の解答では`and`と`or`は`nounand`と`nounor`に変換されるため、教師側の解答でもこれらの形式を使わなければならない場合がある。詳細は[命題論理](../Topics/Propositional_Logic.md)を参照すること。
+また、学生の解答では`and`と`or`は`nounand`と`nounor`に変換されるため、教師側の解答でもこれらの形式を使わなければならない場合がある。詳細は[命題論理](../../en/Topics/Propositional_Logic.md)を参照すること。
 
 バージョン3.6以降では、Maximaにおける不等式（特に1変数の実数不等式）の対応が大幅に改善された。
 
@@ -40,6 +40,6 @@ Maximaでは、$x-1>y$のような単一の不等式だけでなく、$x>1 \text
 
 ## 関連項目
 
-[Maximaリファレンストピック](index.md#reference)
+[Maximaリファレンストピック](../../en/CAS/index.md#reference)
 
 

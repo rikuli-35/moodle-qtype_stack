@@ -26,7 +26,7 @@ JSXGraph、GeoGebra、ParsonsブロックはJSONオブジェクトを返す。�
 この解答欄タイプは以下に使用できる。
 
 1. アンケート
-2. [半自動採点](../../Moodle/Semi-automatic_Marking.md)に寄与する、自動採点されない回答。
+2. [半自動採点](../../../en/Moodle/Semi-automatic_Marking.md)に寄与する、自動採点されない回答。
 
 メモ入力には特別なオプション`manualgraded`があり、デフォルト値は`manualgraded:false`である。`manualgraded:true`を指定した場合、STACK問題全体の手動採点が必要になる。
 

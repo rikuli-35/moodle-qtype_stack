@@ -2,10 +2,10 @@
 
 コンピュータ代数システム（CAS）とは、数式を記号的に扱えるできるソフトウェアである。最も一般的なのは、ユーザが何らかの計算を実行できるようにすることである。数式の評価では、計算を通して学生の解答が持つ性質を判定する。例えば、次のようなものがある。
 
-  * [述語関数](Predicate_functions.md)を使って、1つの式が特定の性質を持つかどうかを調べる。（例：数値の中に浮動小数点が含まれているか？）
+  * [述語関数](../../en/CAS/Predicate_functions.md)を使って、1つの式が特定の性質を持つかどうかを調べる。（例：数値の中に浮動小数点が含まれているか？）
   * 解答テストによって2つの式を比較し、等価かどうかを判定する。（例：学生の式は教師の式と数学的に等価であるか？）
 
-Maximaは、問題の一部となるような構造を持つ数学的オブジェクトの[ランダム生成](Random.md)や、関数の[プロット](Maxima_plot.md)にも使用される。
+Maximaは、問題の一部となるような構造を持つ数学的オブジェクトの[ランダム生成](../../en/CAS/Random.md)や、関数の[プロット](../../en/CAS/Maxima_plot.md)にも使用される。
 
 ごく単純な問題以上のSTACK問題を作成するには、いくつかのMaximaコマンドを使用する必要がある。このドキュメントはMaximaに関する詳細なチュートリアルではない。良い入門書として[Minimal Maxima](http://maxima.sourceforge.net/docs/tutorial/en/minimal-maxima.pdf)がある。本ドキュメントはこれを読んでいることを前提としている。
 
@@ -13,7 +13,7 @@ Maximaは、問題の一部となるような構造を持つ数学的オブジ�
 
 ## オブジェクトの種類 ##
 
-Maximaのすべてのものは「アトム」と「式」で構成されている。アトムは整数、浮動小数点数、文字列、名前のいずれかである。述語関数 `atom()` を使うことで、その引数がアトムであるかどうかを判定することができる。式は演算子と引数のリストを持つ。アンダースコア記号は演算子ではないことに注意すること。例えば、 `a_1` は Maximaでは1つのアトムとして扱われる。添字表示やLaTeX表示の微調整については、[atoms, subscripts and fine tuning the LaTeX display](Subscripts.md) を参照。
+Maximaのすべてのものは「アトム」と「式」で構成されている。アトムは整数、浮動小数点数、文字列、名前のいずれかである。述語関数 `atom()` を使うことで、その引数がアトムであるかどうかを判定することができる。式は演算子と引数のリストを持つ。アンダースコア記号は演算子ではないことに注意すること。例えば、 `a_1` は Maximaでは1つのアトムとして扱われる。添字表示やLaTeX表示の微調整については、[atoms, subscripts and fine tuning the LaTeX display](../../en/CAS/Subscripts.md) を参照。
 
 Maximaは非常に弱い型付け言語であるが、STACKでは以下のような「型」の区別が必要である。
 
@@ -22,16 +22,16 @@ Maximaは非常に弱い型付け言語であるが、STACKでは以下のよう
   3. 集合（例：$\{1,2,3\}$）
   4. リスト（例：$[1,2,3]$）
    Maximaでは順序付きリストは角括弧を使って入力する。例えば、`p:[1,1,2,x^2]`のように書き、要素は `p[1]` という構文で参照する。
-  5. [行列](Matrix.md)  
+  5. [行列](../../en/CAS/Matrix.md)  
    行列の基本構文は `p:matrix([1,2],[3,4])` である。また、各行はリストである。要素は `p[1,2]` などのように参照する。
   6. 論理式  
    これは `and` と `or` で結合された他の式の木構造である。`x=1 or x=2`といった方程式の解を表現するのに便利である。なお、これらの式のサポートはSTACK独自のものである。
   7. 式
-   式は最後に来るが、単に上記のどれにも当てはまらないものとして数えられるからである。STACKは、これらの型を判定するための[述語関数](Predicate_functions.md)を定義している。
+   式は最後に来るが、単に上記のどれにも当てはまらないものとして数えられるからである。STACKは、これらの型を判定するための[述語関数](../../en/CAS/Predicate_functions.md)を定義している。
 
 ## 数値 ##
 
-数値は評価において重要であり、数値がどのように扱われるかについては、より具体的で詳細なドキュメントがある：[STACKにおける数字](Numbers.md)。
+数値は評価において重要であり、数値がどのように扱われるかについては、より具体的で詳細なドキュメントがある：[STACKにおける数字](../../en/CAS/Numbers.md)。
 
 ## エイリアス ##
 
@@ -44,8 +44,8 @@ Maximaにおける絶対値関数は `abs()` として入力する。  STACK で
 
 また、STACKでは少数の関数を再定義している。
 
-* plotコマンド`plot2d`はSTACKの問題では使用しない。代わりに`plot`を使用すること。これは[Maximaプロットページ](Maxima_plot.md)で説明している。これにより、画像ファイルがサーバ上で利用可能になる。
-* 乱数コマンド`random`はSTACKの問題では使用しない。代わりに`rand`コマンドを使用すること。これは[乱数](Random.md) で説明している。これにより、擬似乱数が生成され、学生はログインするたびに同じバージョンの問題を取得することができる。
+* plotコマンド`plot2d`はSTACKの問題では使用しない。代わりに`plot`を使用すること。これは[Maximaプロットページ](../../en/CAS/Maxima_plot.md)で説明している。これにより、画像ファイルがサーバ上で利用可能になる。
+* 乱数コマンド`random`はSTACKの問題では使用しない。代わりに`rand`コマンドを使用すること。これは[乱数](../../en/CAS/Random.md) で説明している。これにより、擬似乱数が生成され、学生はログインするたびに同じバージョンの問題を取得することができる。
 
 ## Maximaの式の構成要素 ##
 
@@ -72,9 +72,9 @@ Maximaの式を分解することは非常に有用である。これを行う�
 
 ## STACKによって定義されたMaximaコマンド ##
 
-問題作成時には、STACKがMaximaを使用しているのと同じ環境でMaximaのコードを試せることは非常に有用である。つまり、設定とSTACK固有の関数が読み込まれた状態である。これを行うには、[STACK-Maxima sandbox](STACK-Maxima_sandbox.md)を参照すること。
+問題作成時には、STACKがMaximaを使用しているのと同じ環境でMaximaのコードを試せることは非常に有用である。つまり、設定とSTACK固有の関数が読み込まれた状態である。これを行うには、[STACK-Maxima sandbox](../../en/CAS/STACK-Maxima_sandbox.md)を参照すること。
 
-STACKは様々な追加関数を作成し、利用可能な関数を制限しているが、その多くがこのドキュメント内で説明されている。[述語関数](Predicate_functions.md)も関連項目である。
+STACKは様々な追加関数を作成し、利用可能な関数を制限しているが、その多くがこのドキュメント内で説明されている。[述語関数](../../en/CAS/Predicate_functions.md)も関連項目である。
 
 
 | コマンド | 説明 |
@@ -82,16 +82,16 @@ STACKは様々な追加関数を作成し、利用可能な関数を制限して
 | `factorlist(ex)` | `ex` の因数のリストを乗法の有無にかかわらず返す。なお、これらの因数の積は元の式とは一致しない場合があり、単項マイナスの抽出や変数の並び順により、 $\pm 1$の因数のみ異なる場合がある。このため、`f1` が `ex` の因数であるかどうかを判断したい場合は、因数リストの包含を調べるよりも `remainder(ex,f1)` が0であるかどうかを確認する方がよい。例えば、`remainder(a^2-b^2,b-a)`と`remainder(a^2-b^2,a-b)`はどちらも0であるが、`factorlist(a^2-b^2)`は `[b-a,b+a]` を返し、この中には`a^b`は因数として含まれていない。|
 | デフォルトでは、リストは重複を含まない。リストに重複を含める場合は、factorlist(ex, true) を使用する。|
 | `zip_with(f,a,b)` | この関数は、二項関数$\mathrm{f}$を2つのリスト$\mathrm{a}$と$\mathrm{b}$に適用し、リストを返す。|
-| `zip_with_matrix(f,A,B)` | この関数は、二項関数$\mathrm{f}$を2つの行列$\mathrm{A}$と$\mathrm{B}$に適用し、行列を返す。行列の加算の例が[show working](Matrix.md#Showing_working)に示されている。 |
+| `zip_with_matrix(f,A,B)` | この関数は、二項関数$\mathrm{f}$を2つの行列$\mathrm{A}$と$\mathrm{B}$に適用し、行列を返す。行列の加算の例が[show working](../../en/CAS/Matrix.md#Showing_working)に示されている。 |
 | `coeff_list_nz(ex,v)` | この関数は、式`ex`を受け取り、`v`の0でない係数のリストを返す。 |
 | `divthru(ex)` | 代数分数（例えば($\frac{x^4-1}{x+2}$)）を受け取り、分母で割りきることで多項式と真分数に分ける。フィードバックや計算過程の記述に有用である。 |
-| `stack_strip_percent(ex,var)` | `ex`から`%`文字で始まる変数を削除し、それらを`var`の変数に置き換える。  solveやode2などで使用する際に有用である。[solve と ode2](../Topics/Differential_equations/Assessing_Responses.md#Solve_and_ode2)を参照すること. |
-| `exdowncase(ex)` | 式`ex`を受け取り、すべての変数を小文字に置き換える(Maximaの`sdowncase(ex)`を参照)。  学生が大文字・小文字を誤って使用しても問題にしない場合、[解答テスト](../Authoring/Answer_Tests/index.md)をを行う前に、この関数を解答に適用することは非常に有用である。なお、`exdowncase(X)-x=0`となることに注意すること。 |
-| `stack_reset_vars` | 定数($\mathrm{i}$など)を抽象記号としてリセットする。[数値](../CAS/Numbers in STACK.md)を参照すること。|
+| `stack_strip_percent(ex,var)` | `ex`から`%`文字で始まる変数を削除し、それらを`var`の変数に置き換える。  solveやode2などで使用する際に有用である。[solve と ode2](../../en/Topics/Differential_equations/Assessing_Responses.md#Solve_and_ode2)を参照すること. |
+| `exdowncase(ex)` | 式`ex`を受け取り、すべての変数を小文字に置き換える(Maximaの`sdowncase(ex)`を参照)。  学生が大文字・小文字を誤って使用しても問題にしない場合、[解答テスト](../../en/Authoring/Answer_Tests/index.md)をを行う前に、この関数を解答に適用することは非常に有用である。なお、`exdowncase(X)-x=0`となることに注意すること。 |
+| `stack_reset_vars` | 定数($\mathrm{i}$など)を抽象記号としてリセットする。[数値](../../en/CAS/Numbers.md)を参照すること。|
 | `safe_op(ex)` | 式の演算を文字列として返す。アトムは（`op`のようにエラーを出すのではなく）空文字列を返す。 |
 | `comp_square(ex,v)` | 変数`v`に関する二次式`ex`を平方完成した形で返す。 |
 | `degree(ex,v)` |　変数`v`に関する`ex`の展開形の次数を返す。Maximaの`hipow`コマンドも参照すること。 |
-| `unary_minus_sort(ex)` | `simp:false`の場合に、式中の単項マイナスの表現方法を整理する。  [simplification](Simplification.md)も参照すること。
+| `unary_minus_sort(ex)` | `simp:false`の場合に、式中の単項マイナスの表現方法を整理する。  [simplification](../../en/CAS/Simplification.md)も参照すること。
 
 ## 代入 ## 
 
@@ -188,7 +188,7 @@ PRTの比較で`sequence`や`ntuple`を使用する場合は、それらをリ�
 
 行列には、括弧の表示を制御するオプションがある。また、行列はカンマなしで表示される。
 
-javascriptと連携する場合は、`sequenceify`を使用しないこと。[JSXGraph](../Specialist_toolss/JSXGraph/index.md)のようなjavascriptと連携する場合、LaTeXやMaximaの通常の括弧記号を含まない値のリストを出力したい場合がある。その場合は以下を使用すること。
+javascriptと連携する場合は、`sequenceify`を使用しないこと。[JSXGraph](../Specialist_tools/JSXGraph/index.md)のようなjavascriptと連携する場合、LaTeXやMaximaの通常の括弧記号を含まない値のリストを出力したい場合がある。その場合は以下を使用すること。
 
     stack_disp_comma_separate([a,b,sin(π)])；
 
@@ -232,4 +232,4 @@ Maximaの`define()`コマンドを使用することは禁止されている。�
 
 ## 関連項目
 
-[Maximaリファレンストピック](index.md#reference)
+[Maximaリファレンストピック](../../en/CAS/index.md#reference)

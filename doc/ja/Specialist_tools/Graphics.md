@@ -5,9 +5,9 @@
 STACKにプロット、画像、図表などを埋め込む方法はいくつかある。
 
 1. HTMLの `<img>` タグを使用して、外部画像を埋め込む。
-2. [Maximaプロット](../CAS/Maxima_plot.md)を使用する。STACKの問題では `plot` コマンドを通じて `plot2d` の一部の機能を利用できる。
+2. [Maximaプロット](../../en/CAS/Maxima_plot.md)を使用する。STACKの問題では `plot` コマンドを通じて `plot2d` の一部の機能を利用できる。
 3. [JSXGraph](../Specialist_tools/JSXGraph/index.md)を使用して画像を作成する。
-4. グラフ理論の[離散グラフ](../Topics/Discrete_mathematics.md)については、STACKの[`plot` コマンド](Plots.md)を使用し、離散プロットと線プロットを組み合わせることで直接作成できる。
+4. グラフ理論の[離散グラフ](../../en/Topics/Discrete_mathematics.md)については、STACKの[`plot` コマンド](../../en/CAS/Maxima_plot.md)を使用し、離散プロットと線プロットを組み合わせることで直接作成できる。
 
 注意事項：
 

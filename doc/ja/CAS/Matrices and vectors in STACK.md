@@ -1,6 +1,6 @@
 # STACKでの行列とベクトル
 
-このページではSTACKにおける行列の使用方法について説明する。[線形代数](../Topics/Linear_algebra/index.md)のSTACK問題を作成するためのトピックページも用意されている。
+このページではSTACKにおける行列の使用方法について説明する。[線形代数](../../en/Topics/Linear_algebra/index.md)のSTACK問題を作成するためのトピックページも用意されている。
 
 ## 行列 ##
 

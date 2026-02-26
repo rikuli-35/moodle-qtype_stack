@@ -1,6 +1,6 @@
 # JSXGraph
 
-このページでは、JSXGraphを用いたビジュアル表示について解説する。これはやや高度なトピックである。基本的なプロットやビジュアルについては、[Maximaを使用したグラフのプロット](../../CAS/Maxima_plot.md)を利用する方がよいかもしれない。
+このページでは、JSXGraphを用いたビジュアル表示について解説する。これはやや高度なトピックである。基本的なプロットやビジュアルについては、[Maximaを使用したグラフのプロット](../../../en/CAS/Maxima_plot.md)を利用する方がよいかもしれない。
 
 STACKは、JSXGraphを使用した動的グラフの組み込みをサポートしている：[http://jsxgraph.uni-bayreuth.de/wiki/](http://jsxgraph.uni-bayreuth.de/wiki/)。
 
