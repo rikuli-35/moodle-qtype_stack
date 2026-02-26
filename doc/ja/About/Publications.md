@@ -6,7 +6,7 @@ STACKは非常に人気のあるオンライン評価システムであり、様
 
 [事例研究](https://docs.stack-assessment.org/content/2019-cate-case-studies.pdf)の冊子と、[STACKプロジェクト](https://docs.stack-assessment.org/content/2018-STACK.pdf)のPDFチラシ。
 
-"STACK入門" [ガイド](https://docs.stack-assessment.org/content/2019-STACK-Guide.pdf) ([スペイン語](https://docs.stack-assessment.org/content/content/es/2019-STACK-Guide.pdf)) 
+"STACK入門" [ガイド](https://docs.stack-assessment.org/content/2019-STACK-Guide.pdf) ([スペイン語](https://docs.stack-assessment.org/content/content/es/2019-STACK-Guide.pdf))
 
 ### 数学のコンピュータ支援評価
 
@@ -29,9 +29,7 @@ STACKは非常に人気のあるオンライン評価システムであり、様
 STACKに関する最近の論文は、導入に良い資料です：
 
 * C. J. Sangwin, R. Bickerton, R. (2023).[数学的証明の実践的オンライン評価](https://www.tandfonline.com/doi/abs/10.1080/0020739X.2021.1896813), International Journal of Mathematical Education in Science and Technology}, 53(10) doi:10.1080/0020739X.2021.1896813.  
-* C. J. Sangwin and I. Jones (2017).[可逆的数学過程における多肢選択式と構成応答式項目の生徒の達成における非対称性](https://dspace.lboro.ac.uk/dspace-jspui/handle/2134/22120).Educational Studies in Mathematics, 94:205-222.
+* C. J. Sangwin and I. Jones (2017).[可逆的数学過程における多肢選択式と構成応答式項目の学生の達成における非対称性](https://dspace.lboro.ac.uk/dspace-jspui/handle/2134/22120).Educational Studies in Mathematics, 94:205-222.
 * C. J. Sangwin and N. Kocher (2016).[数学試験の自動化](https://www.research.ed.ac.uk/portal/files/22213256/2015_11_9_AutomationExaminations.pdf).コンピュータと教育, 94:215-227.
 
 包括的な書誌はこちら：[STACK書誌](https://docs.stack-assessment.org/content/stack_publications.pdf)、[BiBTeXフォーマット](https://docs.stack-assessment.org/content/stack.bib)。
-
-
