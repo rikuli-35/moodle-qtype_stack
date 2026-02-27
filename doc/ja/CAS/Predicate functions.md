@@ -2,12 +2,12 @@
 
 述語関数は式を受け取り、ブール値 `true` または `false` を返す関数である。
 
-[Maxima](Maxima_background.md)では、述語関数の名前を"p"で終わらせるという慣例がある。多くの述語関数が既にMaximaに用意されている。そのうち、特に有用なものを以下に示す。STACKでは、さらに追加の述語関数が定義されている。
-いくつかの述語関数はここで説明しており、他の述語関数はドキュメントの各セクション（[数値](Numbers.md)のように）で説明している。
+[Maxima](../CAS/Introduction%20to%20Maxima%20for%20STACK%20users.md)では、述語関数の名前を"p"で終わらせるという慣例がある。多くの述語関数が既にMaximaに用意されている。そのうち、特に有用なものを以下に示す。STACKでは、さらに追加の述語関数が定義されている。
+いくつかの述語関数はここで説明しており、他の述語関数はドキュメントの各セクション（[数値](../CAS/Numbers%20in%20STACK.md)のように）で説明している。
 
 数学的性質を確立することは述語に関わることであるため、STACKにとっては特に重要である。
 
-術後関数は、[解答テスト](../Authoring/Answer_Tests/index.md)AlgEquivを用いて結果を`true`と比較することで、[ポテンシャル・レスポンス・ツリー](../Authoring/Potential_response_trees.md)内で直接使用することができる。
+術後関数は、[解答テスト](/doc/en/Authoring/Answer_Tests/index.md)AlgEquivを用いて結果を`true`と比較することで、[ポテンシャル・レスポンス・ツリー](../Authoring/Potential_response_trees.md)内で直接使用することができる。
 
 # Maximaの型に関する述語関数 #
 
@@ -16,7 +16,7 @@
 | 関数 |述語 |
 | --- | --- |
 | `floatnump(ex)` | $\mathrm{ex}$が浮動点小数点数かどうかを判定する。ただし、`simp:false`でも動作するSTACKの`float_floatnump(ex)`を使用すること。 |
-| `numberp(ex)` | $\mathrm{ex}$が数値かどうかを判定する。`numberp`は、$\sqrt{2},\pi,\mathrm{i}$のような記号的数であったり、偶数、奇数、整数、有理数、無理数、実数、虚数、複素数と宣言されていても、引数が記号であれば`false`を返すことに注意すること。また、この関数は `simp:false`の場合では動作しないため、[数値](Numbers.md)に関するドキュメントを参照すること。 |
+| `numberp(ex)` | $\mathrm{ex}$が数値かどうかを判定する。`numberp`は、$\sqrt{2},\pi,\mathrm{i}$のような記号的数であったり、偶数、奇数、整数、有理数、無理数、実数、虚数、複素数と宣言されていても、引数が記号であれば`false`を返すことに注意すること。また、この関数は `simp:false`の場合では動作しないため、[数値](../CAS/Numbers%20in%20STACK.md)に関するドキュメントを参照すること。 |
 | `setp(ex)` | $\mathrm{ex}$が集合であるかどうかを判定する。 |
 | `listp(ex)` | $\mathrm{ex}$がリストかどうかを判定する。 |
 | `matrixp(ex)` | $\mathrm{ex}$が行列かどうかを判定する。 |
@@ -60,7 +60,7 @@
 | 関数 | 述語 |
 | --- | --- |
 | `expandp(ex)` | $\mathrm{ex}$がその展開形と等しければtrueを返す。 |
-| `factorp(ex)` | $\mathrm{ex}$がその因数分解形と等しければtrueを返す。なお、式が因数分解されているかどうかを判定したい場合は、[FacForm](../Authoring/Answer_Tests/index.md#Form) 解答テストを使う必要がある。素数はその因数分解形と等しくなるが、合成数は等しくならない。 |
+| `factorp(ex)` | $\mathrm{ex}$がその因数分解形と等しければtrueを返す。なお、式が因数分解されているかどうかを判定したい場合は、[FacForm](/doc/en/Authoring/Answer_Tests/index.md) 解答テストを使う必要がある。素数はその因数分解形と等しくなるが、合成数は等しくならない。 |
 | `continuousousp(ex,v,xp)` | $\mathrm{ex}$が$\mathrm{xp}$において変数$\mathrm{v}$に関して連続ならtrueを返す（信頼性は高くない）。 |
 | `diffp(ex,v,xp,[n])` | $\mathrm{ex}$が$\mathrm{xp}$において変数$\mathrm{v}$に関して微分可能(必要に応じて$\mathrm{n}$回)ならtrueを返す（信頼性は高くない）。 |
 
@@ -98,4 +98,4 @@
 
 ## 関連項目
 
-[Maximaリファレンストピック](index.md#reference.md)
+[Maximaリファレンストピック](../../en/CAS/index.md#reference)

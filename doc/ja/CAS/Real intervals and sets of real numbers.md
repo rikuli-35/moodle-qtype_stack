@@ -69,7 +69,7 @@ Maximaの`union`関数は引数を集合にする必要があるが、区間は�
 
     ans1interval : if listp(ans1) then cc(first(ans1), last(ans1)) else ans1;
 
-同様に、`(a, b)`という解答は`ntuple(a,b)`として解釈される（[集合、リスト、数列、組](<../CAS/Introduction to Maxima for STACK users ja.md>)を参照）。組に対する直接の判定関数は存在しないが、次のようにして`oo(a,b)`に変換できる。
+同様に、`(a, b)`という解答は`ntuple(a,b)`として解釈される（[集合、リスト、数列、組](../CAS/Introduction%20to%20Maxima%20for%20STACK%20users.md)を参照）。組に対する直接の判定関数は存在しないが、次のようにして`oo(a,b)`に変換できる。
 
     ans1interval : if is(safe_op(ans1) = "ntuple") then oo(first(ans1), last(ans1)) else ans1;
 

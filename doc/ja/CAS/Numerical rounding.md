@@ -12,7 +12,7 @@ Maximaは内部的に浮動小数点数を2進数で表現しているため、1
     v0:1-(p1+p2+p3)；
     v1:0.18;
 
-Maximaは`v0`に対して`0.18`を返すが(予想通り)、`v0-v1`は$\mathrm{5.551115123125783\times 10^{-17}}$隣るため、`ATAlgEquiv(v0,v1)`はfalseを返す。浮動小数点数を判定するときは、必ず[数値テスト](../Authoring/Answer_Tests/Numerical.md)を使用すること。
+Maximaは`v0`に対して`0.18`を返すが(予想通り)、`v0-v1`は$\mathrm{5.551115123125783\times 10^{-17}}$隣るため、`ATAlgEquiv(v0,v1)`はfalseを返す。浮動小数点数を判定するときは、必ず[数値テスト](/doc/en/Authoring/Answer_Tests/Numerical.md)を使用すること。
 
 別の例として、デスクトップのMaximaセッションで`100.4-80.0;`を試してみると良い。
 
@@ -30,7 +30,7 @@ STACKでは常に切り上げを行うための関数 `significantfigures(x,n)`�
 
 ## ATAlgEquivと浮動小数点数 ##
 
-浮動小数点数に対して代数的等価判定は使用しないこと推奨する。その代わりに、[数値判定](../Authoring/Answer_Tests/Numerical.md) のいずれかを使用すること。
+浮動小数点数に対して代数的等価判定は使用しないこと推奨する。その代わりに、[数値判定](/doc/en/Authoring/Answer_Tests/Numerical.md) のいずれかを使用すること。
 
 数値のリストには、数値の四捨五入に関する問題を引き起こす。`AAlgEquiv`の解答テストはリストや行列などでも動作する。 しかし、数値判定は単一の浮動小数点数を想定しており、リストなどは受け付けない。
 

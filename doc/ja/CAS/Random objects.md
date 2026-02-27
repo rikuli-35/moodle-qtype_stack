@@ -1,21 +1,21 @@
 # ランダムオブジェクト
 
-STACKでは構造を持つランダムオブジェクトを生成することができる。STACKは[Maxima](Maxima_background.md)の `rand()`関数を提供しており、問題変数および解答変数で使用できる。
+STACKでは構造を持つランダムオブジェクトを生成することができる。STACKは[Maxima](../CAS/Introduction%20to%20Maxima%20for%20STACK%20users.md)の `rand()`関数を提供しており、問題変数および解答変数で使用できる。
 
 STACKは特定のシードから擬似乱数を生成する。これにより、特定の学生が再度アクセスした場合でも、同じ出題形式を表示させることができる。(サイト管理者への注意: 学期の途中でMaximaのバージョンを更新した場合、乱数が変わらないという保証はない。Maximaがバージョン間で乱数生成方法を変更する可能性は低いが、重要であれば事前に確認すること。)
 
 学習や教育という目的では、統計的に完璧なアルゴリズムは必要ない。それよりも、単純さ、効率性、そしてプラットフォーム間での再現性を重視する。したがって、擬似乱数を採用している。
 
-学生が目にする可能性のある各ランダムバージョンを事前にテストすることは非常に重要であり、偶然に任せてはいけない。ランダム変数を事前に生成してテストするには、[ランダムな変数のデプロイ](../STACK_question_admin/Deploying.md)を参照すること。
+学生が目にする可能性のある各ランダムバージョンを事前にテストすることは非常に重要であり、偶然に任せてはいけない。ランダム変数を事前に生成してテストするには、[ランダムな変数のデプロイ](/doc/en/STACK_question_admin/Deploying.md)を参照すること。
 
-また、ユーザは簡単に問題のすべてのバリエーションを[体系的にデプロイ](../STACK_question_admin/Deploying_systematically.md)することができる。
+また、ユーザは簡単に問題のすべてのバリエーションを[体系的にデプロイ](/doc/en/STACK_question_admin/Deploying_systematically.md)することができる。
 
 ## rand()関数
 
 STACKは独自の関数 `rand()` を提供している。
 
 * `rand(n)`は$\mathrm{0}$から$\mathrm{n-1}$までの整数を生成する。
-* `rand(n.0)`は$\mathrm{0}$から$\mathrm{n}$までの浮動小数点数を生成する。小数点以下の桁数を正確に制御するには、「a=float(rand(1000)/1000)」のようにした方が有用である。別の方法として、[Maxima](Maxima_background.md)の`round()`関数を使用するものがある。
+* `rand(n.0)`は$\mathrm{0}$から$\mathrm{n}$までの浮動小数点数を生成する。小数点以下の桁数を正確に制御するには、「a=float(rand(1000)/1000)」のようにした方が有用である。別の方法として、[Maxima](../CAS/Introduction%20to%20Maxima%20for%20STACK%20users.md)の`round()`関数を使用するものがある。
 * `rand([a,b,...,z])`はリストからランダム1つに選択する。
 * `rand({a,b,...,z})`は集合からランダム1つに選択する。
 * `rand(matrix(..))`は行列の各要素にrandを適用する。
@@ -83,7 +83,7 @@ Maxima自体にも乱数関数がある。例えば、ランダムなリスト�
     p:apply("+",makelist(ev(rand_with_prohib(-5,5,[0])*y^rand(2),simp), ev(rand(6)+2,simp)))；
     p:unary_minus_sort(p)；
 
-最初の式の出力は、定数項と変数$\mathrm{y}$からなるランダムな式になる。2行目は単項のマイナスを整理している。この詳細については、[簡約](Simplification.md)を参照すること。
+最初の式の出力は、定数項と変数$\mathrm{y}$からなるランダムな式になる。2行目は単項のマイナスを整理している。この詳細については、[簡約](/doc/en/CAS/Simplification.md)を参照すること。
 
     4*y+5*y+(-2*y)
     4*y+5*y-2*y
@@ -137,10 +137,10 @@ STACKには、構造化ランダム行列を作成するための寄稿ライブ
 * サーバー上のローカルコピーを使用する場合：`stack_include("rand_matrix.mac");`
 * github から最新のコードを使用する場合： `stack_include_contrib("rand_matrix.mac");`
 
-これらの関数の詳細については、[inclusion](../Authoring/Inclusions.md)のドキュメントを参照すること。
+これらの関数の詳細については、[インクルード](../Authoring/Inclusions.md)のドキュメントを参照すること。
 
 例えば、$\mathrm{3 \times 3}$の可逆行列を生成するには`{@rand_invertible(3)@}`を使用する。
 
 ## 関連項目
 
-[Maximaリファレンストピック](index.md#reference)
+[Maximaリファレンストピック](../../en/CAS/index.md#reference)
